@@ -91,6 +91,7 @@ Resultado ótimo:
 ![Tradeoff](assets/img/tradeoff_approval_risk.png)
 
 ---
+## 📂 Estrutura de Diretórios
 
 ```
 /
