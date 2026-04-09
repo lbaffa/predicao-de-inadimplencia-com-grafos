@@ -34,21 +34,21 @@ Pipeline de Data Science combinando Machine Learning e Teoria dos Grafos para en
 
 ```mermaid
 flowchart TD
-    A[Data Source\nUCI Credit Card Dataset] --> B[EDA\nTarget • LIMIT_BAL • PAY_0 • Correlations]
+    A[Data Source\nUCI Credit Card Dataset] --> B[EDA\nTarget distribution\nLIMIT_BAL\nPAY_0\nCorrelations]
 
-    B --> C[Traditional Features\nPAY_X • BILL_AMT • PAY_AMT • Demographics]
-    B --> D[Graph Features\nKNN Graph k=5\nNetworkX\nDegree • PageRank • Louvain]
+    B --> C[Traditional Features\nPAY_X\nBILL_AMT\nPAY_AMT\nDemographics]
+    B --> D[Graph Features\nKNN Graph k5\nNetworkX\nDegree\nPageRank\nLouvain]
 
-    C --> E[Model Training\nLogistic Regression • Random Forest • XGBoost]
+    C --> E[Model Training\nLogistic Regression\nRandom Forest\nXGBoost]
     D --> E
 
     E --> F[Evaluation\nAUC\nXGBoost wins\nGraphs help linear models]
 
-    F --> G[Output\nProbability of Default (PD)]
+    F --> G[Output\nProbability of Default]
 
-    G --> H[Business Simulation\n+1500 good • -5000 default]
+    G --> H[Business Simulation\nPlus 1500 good\nMinus 5000 default]
 
-    H --> I[Optimal Threshold: 25%\nProfit: R$ 4.59M]
+    H --> I[Optimal Threshold 25 percent\nProfit 4.59M BRL]
 ```
 
 ---
